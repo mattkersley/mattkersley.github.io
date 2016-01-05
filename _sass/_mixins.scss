@@ -1,0 +1,10 @@
+/**
+ * Media Queries (min-width)
+ * @param  {string} $size px max width for media-query statement
+ * @return {string}       Media-query wrapper
+ */
+@mixin mq($size){
+	@media screen only and (min-width: $size){
+		@content;
+	}
+}
