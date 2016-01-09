@@ -2,23 +2,28 @@
 layout: default
 title: mattkersley.com
 ---
+<section>
+  <hgroup>
+    <h1 class="page-heading">Hello!  I’m Matt.</h1>
+    <h2>I make websites.</h2>
+  </hgroup>
+  <div class="intro">
+    <p>
+      I'm a web designer &amp; developer in Peterborough working for Jigowatt.<br>
+      I will work for <del>referrals</del>, <del>exposure</del>, <del>chocolate</del>, money… yep money.
+    </p>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+    <p>
+      <a href="/blog">Read me</a>. &nbsp;<a href="https://twitter.com/kersley">Tweet me</a>. &nbsp;<a href="https://github.com/mattkersley">Fork me</a>.
+    </p>
+  </div>
+</section>
+<section class="posts">
+  {% for post in site.posts limit:1 %}
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <h2>{{ post.title }}</h2>
+    {{ post.excerpt }}
+    <p class="buttons"><a href="{{ post.url | prepend: site.baseurl }}" class="button">read more</a> or <a href="/blog" class="button secondary">visit blog</a></p>
+  {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</section>

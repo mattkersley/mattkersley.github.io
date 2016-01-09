@@ -1,0 +1,53 @@
+body {
+  font-family: 'Esteban', serif;
+  font-size: 4vw;
+  line-height: 1.5;
+}
+@include mq(500px) { body { font-size: 3vw; } }
+@include mq(600px) { body { font-size: 2.5vw; } }
+@include mq(1280px){ body { font-size: 2.5vw; } }
+@include mq(1440px){ body { font-size: 38px; } }
+
+hgroup {
+  > * {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height:1.25;
+  text-align: center;
+}
+
+h1 { font-size: 1.602em; font-weight: 900; margin-top: 0; }
+h2 { font-size: 1.424em; }
+h3 { font-size: 1.266em; }
+h4 { font-size: 1.125em; }
+@include mq(600px){
+  h1 { font-size: 2.441em; }
+  h2 { font-size: 1.953em; }
+  h3 { font-size: 1.563em; }
+  h4 { font-size: 1.250em; }
+}
+
+p {
+  + h2,
+  + h3 {
+    margin-top: 1.25em;
+  }
+}
+
+blockquote {
+  border-left: solid 0.25em $brand-color;
+  color: $grey-color;
+  font-size: 0.875em;
+  margin-left: 1em;
+  padding-left: 1em;
+}

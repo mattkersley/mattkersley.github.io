@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+
+.wrapper {
+  width: 80vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.site-footer {
+  margin-top: $spacing-unit*4;
+}

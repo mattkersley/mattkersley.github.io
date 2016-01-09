@@ -1,0 +1,111 @@
+svg { display:block; margin: 50px auto; width: 320px; max-width: 80vw; }
+
+#logomark path { fill: $brand-color; }
+
+.home{
+
+  svg {
+    width: 100%;
+    animation: resize 0.5s ease forwards 2.75s;
+  }
+
+  /* logomark */
+  #logomark #m {
+    opacity: 0;
+    animation: fadein 0.5s linear forwards 1.25s;
+  }
+  #logomark #k {
+    opacity: 0;
+    animation: fadein 0.5s linear forwards 1.5s;
+  }
+
+  /* lines */
+  #lines path {
+    stroke: $text-color;
+    stroke-width: 0.15%;
+
+    &[id^=v]{
+      $stroke-dash: 650;
+      stroke-dasharray: $stroke-dash;
+      stroke-dashoffset: $stroke-dash;
+    }
+
+    &[id^=d]{
+      $stroke-dash: 800;
+      stroke-dasharray: $stroke-dash;
+      stroke-dashoffset: $stroke-dash;
+    }
+
+    animation:
+      drawlines 1s linear forwards,
+      fadeout 1s linear forwards 2.5s;
+  }
+
+  /* shapes */
+  #shapes circle {
+    stroke: $text-color;
+    stroke-width: 0.3%;
+  }
+  #shapes circle[id*=small],
+  #shapes circle[id*=inner]{
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+  }
+  #shapes circle[id*=outer]{
+    stroke-dasharray: 960;
+    stroke-dashoffset: 960;
+    animation: drawlines 1s linear forwards;
+  }
+  #shapes circle,
+  #lines path {
+    animation:
+      drawlines 1s linear forwards,
+      fadeout 1s linear forwards 1.5s;
+
+    &:nth-child(2n) {
+      animation:
+        drawlines 1s linear forwards .1s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(3n) {
+      animation:
+        drawlines 1s linear forwards .2s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(4n) {
+      animation:
+        drawlines 1s linear forwards .3s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(5n) {
+      animation:
+        drawlines 1s linear forwards .4s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(6n) {
+      animation:
+        drawlines 1s linear forwards .5s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(7n) {
+      animation:
+        drawlines 1s linear forwards .6s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(8n) {
+      animation:
+        drawlines 1s linear forwards .7s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(9n) {
+      animation:
+        drawlines 1s linear forwards .8s,
+        fadeout 1s linear forwards 1.5s;
+    }
+    &:nth-child(10n) {
+      animation:
+        drawlines 1s linear forwards .9s,
+        fadeout 1s linear forwards 1.5s;
+    }
+  }
+}
