@@ -29,8 +29,8 @@ Over the last year, the fiery passion I had for the web industry has slowly dwin
 
 There are a few reasons for this, none of which I’ll bore you with, but it needed to change rapidly. This is where this site has magically come from.
 
-I’m getting my passion back.
-I’m starting to tinker again.
+I’m getting my passion back.  
+I’m starting to tinker again.  
 I’m back to learning new things.
 
 ## Hello Jekyll, bye bye WordPress
