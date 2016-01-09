@@ -11,7 +11,7 @@ email: mkersley@gmail.com
 description: Peterborough based web designer and developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mattkersley.com" # the base hostname & protocol for your site
-permalink: /:categories/:slug
+permalink: /:categories/:title
 
 #social stuff
 site_avatar: "https://avatars2.githubusercontent.com/u/635655?v=3&s=144"
