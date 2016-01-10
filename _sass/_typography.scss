@@ -1,12 +1,13 @@
 body {
   font-family: 'Esteban', serif;
-  font-size: 4vw;
+  font-size: 6vw;
   line-height: 1.5;
 }
-@include mq(500px) { body { font-size: 3vw; } }
-@include mq(600px) { body { font-size: 2.5vw; } }
-@include mq(1280px){ body { font-size: 2.5vw; } }
-@include mq(1440px){ body { font-size: 38px; } }
+@include mq(400px) { body { font-size: 5vw; } }
+@include mq(500px) { body { font-size: 4vw; } }
+@include mq(600px) { body { font-size: 3vw; } }
+@include mq(768px) { body { font-size: 2.75vw; } }
+@include mq(1024px){ body { font-size: 2.4vw; } }
 
 hgroup {
   > * {
