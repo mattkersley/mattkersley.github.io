@@ -1,7 +1,7 @@
 @keyframes fadeout { to { opacity: 0; } }
 @keyframes fadein { to { opacity: 1; } }
 @keyframes drawlines { to { stroke-dashoffset: 0; } }
-@keyframes resize { to { width: 320px; } }
+@keyframes resize { to { width: 280px; } }
 @keyframes movein { to { margin-top: 0; opacity: 1; } }
 @keyframes loader {
   0%   {left: 0px; top: 0px;}
