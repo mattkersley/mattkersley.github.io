@@ -21,7 +21,7 @@ The biggest challenge on that list at the time was going to be the website rebui
 ## Dafuq? It’s what you do!
 
 It’s something that has been avoided like the plague for several years now.  
-Mostly because of shame, lazyness and what I thought was a “lack of time”.
+Mostly because of shame, laziness and what I thought was a “lack of time”.
 
 Realistically, I think I just didn’t _want_ to do it.
 
