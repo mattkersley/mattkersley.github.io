@@ -25,8 +25,7 @@ The web fonts being used:
 - [Lato](https://www.google.com/fonts/specimen/Lato) for headings
 - [Esteban](https://www.google.com/fonts/specimen/Esteban) for the rest (almost)
 
-I liked the combination of the two fonts while I was testing a few out.  
-There was something visually appealing to me, your opinion may differ though.
+There was something visually appealing to me about this combination, your opinion may differ though.
 
 Lato works well as a heading font (with a small about of kerning) – setting the H1 a a heavier weight to emphasise the post title.
 
