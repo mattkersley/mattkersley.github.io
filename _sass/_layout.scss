@@ -1,5 +1,52 @@
+/**
+ * HTML Elements
+ */
+
 * { box-sizing: border-box; }
 
+section {
+  border-bottom: solid 1px $grey-color;
+  border-top: solid 1px $grey-color;
+  padding: $spacing-unit 0;
+
+  + section {
+    border-top: 0;
+  }
+
+  &:last-child { border-bottom: 0; }
+}
+
+img{
+  height: auto;
+  max-width: 120%;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.hang {
+    width: 120%;
+  }
+
+  &.left {
+    float: left;
+    margin-left: -10%;
+    margin-right: $spacing-unit;
+    max-width: 60%;
+  }
+
+  &.right {
+    float: right;
+    margin-left: $spacing-unit;
+    margin-right: -10%;
+    max-width: 60%;
+  }
+}
+
+
+/**
+ * Wrappers
+ */
 .wrapper {
   width: 90vw;
   max-width: 1008px;
@@ -12,7 +59,28 @@
   .wrapper { width: 70vw; }
 }
 
-
+/**
+ * Footer
+ */
 .site-footer {
-  margin-top: $spacing-unit*4;
+  section { border-bottom: 0; }
+  p { margin: 0; }
+}
+@include mq(500px){
+  .site-footer { text-align: left; }
+}
+
+.footer-avatar {
+  border: solid 10px $grey-color-light;
+  border-radius: 500px;
+  display: block;
+  margin: 0 auto $spacing-unit auto;
+}
+@include mq(500px){
+  .footer-avatar {
+    display: inline-block;
+    float: left;
+    margin: 0 $spacing-unit $spacing-unit 0;
+    max-width: 20%;
+  }
 }

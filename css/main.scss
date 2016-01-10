@@ -17,75 +17,6 @@
 @import "layout";
 @import "logo";
 
-
-/**
- * HTML elements
- */
-body {
-  color: $text-color;
-}
-
-section {
-  border-bottom: solid 1px $grey-color;
-  border-top: solid 1px $grey-color;
-  padding: $spacing-unit 0;
-
-  + section {
-    border-top: 0;
-  }
-
-  &:last-child { border-bottom: 0; }
-}
-
-footer {
-  font-size: .875em;
-
-  section { border-bottom: 0; }
-
-  img {
-    border: solid 10px $grey-color-light;
-    border-radius: 500px;
-    float: left;
-    margin-bottom: $spacing-unit;
-    margin-right: $spacing-unit;
-    max-width: 20%;
-  }
-
-  p { margin: 0; }
-}
-
-a {
-  color: $brand-color-2;
-  text-decoration: none;
-}
-
-img{
-  height: auto;
-  max-width: 120%;
-
-  &.full {
-    width: 100%;
-  }
-
-  &.hang {
-    width: 120%;
-  }
-
-  &.left {
-    float: left;
-    margin-left: -10%;
-    margin-right: $spacing-unit;
-    max-width: 60%;
-  }
-
-  &.right {
-    float: right;
-    margin-left: $spacing-unit;
-    margin-right: -10%;
-    max-width: 60%;
-  }
-}
-
 /**
  * buttons
  */
@@ -127,23 +58,18 @@ img{
 .js{
 
   .page-content{
-    margin-top: 120px;
+    margin-top: $spacing-unit;
     opacity: 0;
   }
+
   .site-footer { opacity: 0; }
 
   &.loaded{
-    .page-content{
-      animation: movein 1.5s ease-out forwards 0.5s;
-    }
-    .site-footer {
-      animation: fadein 1.5s ease-out forwards 0.5s;
-    }
-
-    .loader{
-      animation: fadeout 0.5s ease-out forwards;
-    }
+    .page-content { animation: movein 1s ease-out forwards 0.5s; }
+    .site-footer  { animation: fadein 1s ease-out forwards 0.5s; }
+    .loader       { animation: remove-loader 0.5s ease-out forwards; }
   }
+
 }
 
 /**
@@ -160,33 +86,37 @@ img{
     margin: 0;
     opacity: 0;
   }
+
+  .loader { display: none; }
 }
 
 /**
  * Loading animation
  */
-.loader {
-  width: 80px;
-  height: 20px;
-  position: relative;
-  margin: 0 auto;
-
-  div {
+.js {
+  .loader {
+    width: 80px;
     height: 20px;
-    width: 20px;
-    background: $brand-color;
-    border-radius: 50%;
-    position: absolute;
-    animation: loader 1.4s ease infinite;
+    position: relative;
+    margin: 0 auto;
 
-    &:nth-child(2){
-      animation-delay: 0.1s;
-      transform: translateX(30px);
-    }
+    div {
+      height: 20px;
+      width: 20px;
+      background: $brand-color;
+      border-radius: 50%;
+      position: absolute;
+      animation: loader 1.4s ease infinite;
 
-    &:nth-child(3){
-      animation-delay: 0.2s;
-      transform: translateX(60px);
+      &:nth-child(2){
+        animation-delay: 0.1s;
+        transform: translateX(30px);
+      }
+
+      &:nth-child(3){
+        animation-delay: 0.2s;
+        transform: translateX(60px);
+      }
     }
   }
 }

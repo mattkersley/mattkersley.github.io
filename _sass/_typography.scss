@@ -1,4 +1,8 @@
+/**
+ * HTML Elements
+ */
 body {
+  color: $text-color;
   font-family: 'Esteban', serif;
   font-size: 6vw;
   line-height: 1.5;
@@ -55,4 +59,17 @@ blockquote {
   font-size: 0.875em;
   margin-left: 1em;
   padding-left: 1em;
+}
+
+a {
+  color: $brand-color-2;
+  text-decoration: none;
+}
+
+/**
+ * Footer
+ */
+.site-footer {
+  font-size: .875em;
+  text-align: center;
 }
