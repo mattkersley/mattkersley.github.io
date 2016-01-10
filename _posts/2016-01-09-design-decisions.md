@@ -5,11 +5,14 @@ date:   2016-01-09 07:10:00 +0000
 categories: design
 ---
 
-Most websites I design and build have a bit more to them than my own websites, so it’s been a pleasure working with just content for a change.
-That’s all this site is… content. The only superfluous design “fluff” is the logo animation on the [homepage](/).
+Almost *all* the other sites I build have a different _type_ of content that needs to be catered for… it’s more verbose.
+For my own site, I wanted the focus to be _just_ the content.
 
-For the new design, I wanted to focus entirely on content.  
-Just the stuff that you, the user would visit for.
+But why would I not “design” my own site in the sense of making it as flashy as possible? Well, I tried that, and I get bored of the designs before I finish coding them up.
+
+It’s a personal flaw, I'm too fickle with my own work.
+
+Besides, keeping the design simple, clean and elegant means that you're getting *just* the content you've come for right?
 
 ## Typography
 
