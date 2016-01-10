@@ -169,8 +169,7 @@ a {
  */
 .post-meta {
   margin-bottom: 0;
-  text-align: center;
-
+  
   + h1,
   + h2,
   + h3 {
@@ -194,5 +193,6 @@ a {
  * Homepage specific styles
  */
 .home {
-  .intro { text-align: center; }
+  .intro,
+  hgroup h2 { text-align: center; }
 }
