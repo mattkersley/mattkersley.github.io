@@ -59,6 +59,33 @@ a {
   text-decoration: none;
 }
 
+img{
+  height: auto;
+  max-width: 120%;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.hang {
+    width: 120%;
+  }
+
+  &.left {
+    float: left;
+    margin-left: -10%;
+    margin-right: $spacing-unit;
+    max-width: 60%;
+  }
+
+  &.right {
+    float: right;
+    margin-left: $spacing-unit;
+    margin-right: -10%;
+    max-width: 60%;
+  }
+}
+
 /**
  * buttons
  */
@@ -169,13 +196,15 @@ a {
  */
 .post-meta {
   margin-bottom: 0;
-  
+
   + h1,
   + h2,
   + h3 {
     margin-top: 0;
   }
 }
+
+.post-header .post-meta {text-align: center;}
 
 .post-list{
   list-style: none;
