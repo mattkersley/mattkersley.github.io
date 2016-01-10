@@ -23,13 +23,12 @@ h4 {
   font-weight: 400;
   letter-spacing: 0.025em;
   line-height:1.25;
-  text-align: center;
 }
 
-h1 { font-size: 1.602em; font-weight: 900; margin-top: 0; }
+h1 { font-size: 1.602em; font-weight: 900; margin-top: 0; text-align: center; }
 h2 { font-size: 1.424em; }
-h3 { font-size: 1.266em; }
-h4 { font-size: 1.125em; }
+h3 { font-size: 1.266em; margin-bottom: 0; + p { margin-top:0.5em; } }
+h4 { font-size: 1.125em; margin-bottom: 0; + p { margin-top:0.5em; } }
 @include mq(600px){
   h1 { font-size: 2.441em; }
   h2 { font-size: 1.953em; }
