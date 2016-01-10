@@ -18,28 +18,54 @@ section {
 
 img{
   height: auto;
-  max-width: 120%;
+  max-width: 100%;
+
+  &.full,
+  &.hang,
+  &.left,
+  &.right {
+    display: block;
+    margin-bottom: $spacing-unit;
+  }
 
   &.full {
     width: 100%;
   }
+}
+@include mq(768px){
+  img {
 
-  &.hang {
-    width: 120%;
+    &.hang {
+      margin-left: -10%;
+      max-width: 120%;
+      width: 120%;
+    }
+
+    &.left {
+      float: left;
+      margin: 0 $spacing-unit $spacing-unit -10%;
+      max-width: 40%;
+    }
+
+    &.right {
+      float: right;
+      margin: 0 -10% $spacing-unit $spacing-unit;
+      max-width: 10%;
+    }
+
   }
+}
+@include mq(1024px){
+  img {
+    .hang {
+      margin-left: 15%;
+      max-width: 130%;
+      width: 130%;
+    }
 
-  &.left {
-    float: left;
-    margin-left: -10%;
-    margin-right: $spacing-unit;
-    max-width: 60%;
-  }
+    .left { margin-left: -15%; }
 
-  &.right {
-    float: right;
-    margin-left: $spacing-unit;
-    margin-right: -10%;
-    max-width: 60%;
+    .right { margin-right: -15%; }
   }
 }
 
@@ -63,6 +89,7 @@ img{
  * Footer
  */
 .site-footer {
+  clear:both;
   section { border-bottom: 0; }
   p { margin: 0; }
 }
