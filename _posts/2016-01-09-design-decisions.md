@@ -52,4 +52,6 @@ This ensures there’s no jumpy font loading, images or any other assets causing
 
 ## No Navigation?
 
+<img src="http://i.giphy.com/CPskAi4C6WLHa.gif" class="hang">
+
 At the moment, there isn't enough content on the site to warrant navigation as such. You’ve got the back button on your browser, and the logo for the homepage, what more do you want?
