@@ -1,3 +1,15 @@
+$resize-logo-speed:    0.5s;
+$resize-logo-delay:    3.5s;
+
+$lines-opacity:        0.5;
+$draw-lines-speed:     1s;
+$fade-lines-delay:     2.25s;
+
+$draw-letters-speed:   0.5s;
+$draw-letter-m-delay:  2s;
+$draw-letter-k-delay:  2.2s;
+
+
 .logo { display: block; }
 
 svg { display:block; margin: 0 auto; width: 280px; max-width: 80vw; }
@@ -8,23 +20,24 @@ svg { display:block; margin: 0 auto; width: 280px; max-width: 80vw; }
 
   svg {
     width: 100%;
-    animation: resize 0.5s ease forwards 2.75s;
+    animation: resize $resize-logo-speed ease forwards $resize-logo-delay;
   }
 
   /* logomark */
   #logomark #m {
     opacity: 0;
-    animation: fadein 0.5s linear forwards 1.25s;
+    animation: fadein $draw-letters-speed linear forwards $draw-letter-m-delay;
   }
   #logomark #k {
     opacity: 0;
-    animation: fadein 0.5s linear forwards 1.5s;
+    animation: fadein $draw-letters-speed linear forwards $draw-letter-k-delay;
   }
 
   /* lines */
   #lines path {
     stroke: $text-color;
     stroke-width: 0.15%;
+    opacity: $lines-opacity;
 
     &[id^=v]{
       $stroke-dash: 650;
@@ -39,14 +52,15 @@ svg { display:block; margin: 0 auto; width: 280px; max-width: 80vw; }
     }
 
     animation:
-      drawlines 1s linear forwards,
-      fadeout 1s linear forwards 2.5s;
+      drawlines $draw-lines-speed linear forwards,
+      fadeout draw-lines-speed linear forwards $fade-lines-delay;
   }
 
   /* shapes */
   #shapes circle {
     stroke: $text-color;
     stroke-width: 0.3%;
+    opacity: $lines-opacity;
   }
   #shapes circle[id*=small],
   #shapes circle[id*=inner]{
@@ -56,58 +70,58 @@ svg { display:block; margin: 0 auto; width: 280px; max-width: 80vw; }
   #shapes circle[id*=outer]{
     stroke-dasharray: 960;
     stroke-dashoffset: 960;
-    animation: drawlines 1s linear forwards;
+    animation: drawlines $draw-lines-speed linear forwards;
   }
   #shapes circle,
   #lines path {
     animation:
-      drawlines 1s linear forwards,
-      fadeout 1s linear forwards 1.5s;
+      drawlines $draw-lines-speed linear forwards,
+      fadeout $draw-lines-speed linear forwards $fade-lines-delay;
 
     &:nth-child(2n) {
       animation:
-        drawlines 1s linear forwards .1s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards $draw-lines-speed,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(3n) {
       animation:
-        drawlines 1s linear forwards .2s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .2s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(4n) {
       animation:
-        drawlines 1s linear forwards .3s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .3s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(5n) {
       animation:
-        drawlines 1s linear forwards .4s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .4s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(6n) {
       animation:
-        drawlines 1s linear forwards .5s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .5s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(7n) {
       animation:
-        drawlines 1s linear forwards .6s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .6s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(8n) {
       animation:
-        drawlines 1s linear forwards .7s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .7s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(9n) {
       animation:
-        drawlines 1s linear forwards .8s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .8s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
     &:nth-child(10n) {
       animation:
-        drawlines 1s linear forwards .9s,
-        fadeout 1s linear forwards 1.5s;
+        drawlines $draw-lines-speed linear forwards .9s,
+        fadeout $draw-lines-speed linear forwards $fade-lines-delay;
     }
   }
 }
