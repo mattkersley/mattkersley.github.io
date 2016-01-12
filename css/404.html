@@ -1,0 +1,135 @@
+---
+title: hurt me
+permalink: /404.html
+---
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="robots" content="noindex">
+
+  {% include head--twitter-card.html %}
+  {% include head--opengraph.html %}
+  {% include head--icons.html %}
+
+  <style>
+    html, body { padding: 0; margin: 0; }
+    noscript {display: block; padding-top: 45vh; text-align:center; font-weight:bold}
+    .counter { color: red; font: 2em sans-serif; left: 50%; margin-left:-0.75em; position: absolute; top: 20px; z-index: 404; }
+    .slap { position: absolute; width: 100%; height: 100%; background-size: cover; background-position: center; z-index:0; }
+
+    {% for i in (1..11) %}
+    .slap-{{i}}  { background-image: url(/img/slap-{{i}}.jpg); }
+    {% endfor %}
+  </style>
+
+</head>
+
+<body>
+
+  <noscript>
+    <div>Damn, you got the boring version of my 404 page&hellip; <a href="/">Go Home</a></div>
+  </noscript>
+
+  <audio src="/audio/slap1.mp3"></audio>
+  <audio src="/audio/slap2.mp3"></audio>
+
+  <script>
+    var body = document.getElementsByTagName('body')[0];
+    var frames = [];
+    var frameCount = 11;
+    var slapsLeft = 404;
+    var slapAudio = document.getElementsByTagName('audio');
+    var directionFrom = 0;
+    var audioPlayed = false;
+
+
+    // create slap image elements
+    for (var i = 0; i < frameCount; i++) {
+      var slap = document.createElement('div');
+      slap.setAttribute('class', 'slap slap-'+(i+1));
+      body.appendChild(slap);
+      frames[i] = slap;
+    }
+
+    var counter = document.createElement('div');
+    counter.setAttribute('class', 'counter');
+    body.appendChild(counter);
+
+
+    function updateCounter() {
+      if (slapsLeft == 0) { window.location.href = 'http://bit.ly/1JIoqrN'; }
+      counter.innerHTML = slapsLeft;
+    } updateCounter();
+
+    // get and return the mouse's position
+    function mouseXPosition(e) {
+      return e.clientX;
+    }
+
+    // shows a particular slap image based on mouse position
+    function slapMe(e) {
+      var xPos = mouseXPosition(e);
+      var windowWidth = window.innerWidth;
+      var zoneWidth = windowWidth/frames.length;
+
+      // if the user is swiping 20% in middle of screen (the slap)
+      if (
+        xPos > ((windowWidth/2) - (zoneWidth/2)) &&
+        xPos < ((windowWidth/2) + (zoneWidth/2))
+      ) {
+
+        // if the audio hasn't been played for the current swipe play it
+        if (!audioPlayed) {
+
+          slapsLeft--;
+          updateCounter();
+
+          // stop all previous audio from playing
+          slapAudio[0].pause(); slapAudio[0].currentTime = 0;
+          slapAudio[1].pause(); slapAudio[1].currentTime = 0;
+
+          // play slap audio based on direction of mouse swipe
+          if(directionFrom < xPos){
+            slapAudio[0].play();
+          } else {
+            slapAudio[1].play();
+          }
+          audioPlayed = true;
+        }
+      } else {
+        audioPlayed = false;
+      }
+
+      // store the current position for next run through of function
+      directionFrom = xPos;
+
+      // loop images, show correct one for mouse position
+      for (var i = 0; i < frames.length; i++) {
+        if(
+          (xPos < (zoneWidth*i) && xPos > (zoneWidth*(i-1))) ||
+          (xPos > (zoneWidth*i) && xPos < windowWidth)
+        ){
+          frames[i].style.zIndex = '1';
+        } else {
+          frames[i].style.zIndex = '0';
+        }
+      }
+
+      if(window.console){
+        console.clear();
+        console.log('only ' + slapsLeft + ' slaps to go!');
+      }
+    }
+
+    // event listeners
+    document.addEventListener('mousemove', slapMe);
+
+  </script>
+
+</body>
+</html>
