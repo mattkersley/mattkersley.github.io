@@ -1,7 +1,22 @@
 <script>
+  var body = document.getElementsByTagName('body')[0];
+
   // we add this inline to let the CSS know we have JS capability
   // as soon as humanly possible.
-  document.getElementsByTagName('body')[0].className += ' js';
+  body.className += ' js';
+
+  // if our logo animation hasn't been played in 24 hours,
+  // clear the localstorage ready to play it (next code block)
+  if (playLogo) {
+    localStorage.removeItem('logo_expiry');
+  }
+
+  // if we're on the homepage, and the logo animation hasn't played before
+  // add an "animate" css class and set the localstorage item
+  if (body.className.indexOf('home') > -1 && playLogo && window.localStorage) {
+    body.className += ' animate-logo';
+    localStorage.setItem("logo_expiry", tomorrow);
+  }
 </script>
 
 <header class="site-header">

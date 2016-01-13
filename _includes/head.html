@@ -15,10 +15,24 @@
   {% include head--icons.html %}
 
   <script>
-    // when the whole document has loaded, add a CSS class
+
+    // global vars
+    var today = new Date();
+    var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+    var playLogo = false;
+
+    // if we have localstorage,
+    // see if the logo_expiry has happened or not
+    if (window.localStorage) {
+      var expires = new Date(localStorage.getItem('logo_expiry'));
+      playLogo = (today - expires > 0);
+    }
+
+    // if the logo animation has been played already, just load the content
     window.onload = function(){
-      var body = document.getElementsByTagName('body')[0]
-      if (body.className.indexOf('home') == -1) {
+      var body = document.getElementsByTagName('body')[0];
+      if (!playLogo || body.className.indexOf('home') < 0) {
         body.className += ' loaded';
       }
     };
