@@ -69,6 +69,19 @@ img{
   }
 }
 
+@include mq(768px){
+  .highlight {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+}
+@include mq(1024px){
+  .highlight {
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+}
+
 
 /**
  * Wrappers
