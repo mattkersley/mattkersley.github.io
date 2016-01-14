@@ -27,7 +27,7 @@ The web fonts being used:
 
 There was something visually appealing to me about this combination, your opinion may differ though.
 
-Lato works well as a heading font (with a small about of kerning) – setting the H1 a a heavier weight to emphasise the post title.
+Lato works well as a heading font (with a small about of kerning) – setting the H1 at a heavier weight to emphasise the post title.
 
 Esteban is a lovely, readable font too. It seems to work well with differing font-sizes as the device width is altered.
 
