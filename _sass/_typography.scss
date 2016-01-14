@@ -70,6 +70,10 @@ em {
   margin-right: 0.1em;
 }
 
+strong {
+  color: darken($text-color, 15);
+}
+
 /**
  * Footer
  */
