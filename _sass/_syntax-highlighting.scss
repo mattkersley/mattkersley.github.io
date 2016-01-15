@@ -1,25 +1,32 @@
 /**
  * Syntax highlighting styles
  */
-.highlight {
+.highlighttable {
     background: #282C34;
     border-radius: .5em;
     color: #ddd;
     font-size: .5em;
     -webkit-font-smoothing: subpixel-antialiased;
+    width: 100%;
 
     pre {
       font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
       margin: 0;
-      overflow-x: scroll;
+      padding: 10px 0;
       white-space: pre;
     }
 
-    .gutter pre {
+    .linenodiv {
       border-right: solid 1px #3C4049;
-      margin-right:10px;
-      padding:0 10px 0 5px;
+      padding-right: 10px;
+      text-align: right;
       white-space: pre;
+    }
+
+    .code .highlight {
+      overflow-x: scroll;
+      padding-left:10px;
+      width: 100%;
     }
 
     .highlighter-rouge & {
