@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta name = "viewport" content = "width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable:no;">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  <div id="stage" class="clear" role="main">
+   <header>
+	<h1>Responsive Ribbon Slider Demo</h1>
+  </header>
+ 
+	<ul id="slider">
+		<li>
+			<a href="#">
+				<img src="img/slide1.jpg" />
+				<p>
+					<span class="title">Title</span>
+					<span class="desc">some blurb goes here</span>  				
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="img/slide2.jpg" />
+				<p>
+					<span class="title">Title</span>
+					<span class="desc">some blurb goes here</span>  				
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="img/slide3.jpg" />
+				<p>
+					<span class="title">Title</span>
+					<span class="desc">some blurb goes here</span>  				
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="img/slide4.jpg" />
+				<p>
+					<span class="title">Title</span>
+					<span class="desc">some blurb goes here</span>  				
+				</p>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<img src="img/slide5.jpg" />
+				<p>
+					<span class="title">Title</span>
+					<span class="desc">some blurb goes here</span>  				
+				</p>
+			</a>
+		</li>
+	</ul>
+  
+
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+
+  <!-- scripts concatenated and minified via build script -->
+<script src="js/jquery.ribbonslider.min.js"></script>
+<script>
+		$('#slider').ribbonSlider();
+</script>
+  <!-- end scripts -->
+  </body>
+</html>

@@ -1,0 +1,55 @@
+a img{
+	border: 0;
+}
+
+#stage{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* ribbon slider required css */
+#rrs-s{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+#rrs-s ul{
+	list-style:none;
+	padding:0;margin:0;
+	height:100%;
+	overflow: hidden;
+	zoom:1;
+}
+
+/* custom elements CSS */
+#rrs-s ul li a{
+	display:block;
+	height: 100%;
+	position: relative;
+	text-decoration: none;
+}
+#rrs-s ul li p{
+	display: none;
+	width: 400px;
+	max-width: 70%;
+}
+#rrs-s #rrs-c ul li p{
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 20px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+}
+#rrs-s ul li p span.title{
+	display: block;
+	font-size: 24px;
+}
+
+
+@media screen and (max-width:960px){
+	#stage{
+		max-width: 70%;
+	}
+}
