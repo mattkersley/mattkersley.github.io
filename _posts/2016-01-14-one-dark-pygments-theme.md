@@ -13,7 +13,7 @@ It’s only really been tested with PHP, SCSS, HTML and JavaScript – let me kn
 
 Here’s the .scss for it below:
 
-{% highlight scss linenos %}
+{% highlight scss linenos=table %}
 /**
  * Syntax highlighting styles
  */
