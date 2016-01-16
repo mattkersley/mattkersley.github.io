@@ -44,13 +44,13 @@ img{
     &.left {
       float: left;
       margin: 0 $spacing-unit $spacing-unit -10%;
-      max-width: 40%;
+      max-width: 50%;
     }
 
     &.right {
       float: right;
       margin: 0 -10% $spacing-unit $spacing-unit;
-      max-width: 10%;
+      max-width: 50%;
     }
 
   }
