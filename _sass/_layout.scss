@@ -69,14 +69,20 @@ img{
   }
 }
 
+
+/**
+ * Syntax highlighting container margin overhang
+ */
 @include mq(768px){
-  .highlighttable {
+  .highlighttable,
+  .post-content > .highlight {
     margin-left: -10%;
     width: 120%;
   }
 }
 @include mq(1024px){
-  .highlighttable {
+  .highlighttable,
+  .post-content > .highlight {
     margin-left: -15%;
     width: 130%;
   }
