@@ -8,7 +8,7 @@ Jigowatt (work) paid for a brand new “VeriDesk Pro Plus 36” for me to work w
 Read about my first working week being a “stand up guy”."
 ---
 
-<img class="left" alt="VeriDesk Pro Plus 36" src="/img/post-images/veridesk-pro-plus-36.jpg">
+<img class="left" alt="VeriDesk Pro Plus 36" src="/img/post-images/vouching-for-no-slouching-veridesk.jpg">
 
 I’m jumping on the “standing desk” bandwagon!
 

@@ -5,9 +5,11 @@ date:   2016-01-17 07:00:00 +0000
 categories: health
 ---
 
-Stress, and it's evil side effect, anger is something I struggle with on an almost daily basis these days, and I'm going to talk about triggers and the steps I use to try and manage it.
+Stress, and it's evil side effect, anger are issues I struggle with on an almost daily basis these days, and I'm going to talk about triggers and the steps I use to try and manage it.
 
 ## why so serious?
+
+<img class="hang" src="http://i1.kwejk.pl/k/obrazki/375ccf81be69a09ef0106216e4e2a4ee.gif">
 
 Sometimes, it pays to be honest and serious with what you write, and it connects with people. If this post helps at least one person, then it's done it's job.
 
@@ -18,6 +20,8 @@ It could be anything, from a hacked WordPress install to a badly worded email to
 It's a personal fault. I'm working on it.
 
 ## Triggers
+
+<img class="hang" src="/img/post-images/anger-stress-get-less-trigger.gif">
 
 ### Broken sleep.  
 This is a biggie for me. If I don't get a reasonable nights sleep, I'm basically a grizzly bear in the morning that's been hit with a large stick. I don't cope well.
@@ -43,6 +47,8 @@ To be frank, if you're often late, or not pulling your own weight, I'm not going
 If you consider other people's time and effort unimportant, you're basically (intentionally or not) letting everyone know your time and lack of work ethics makes you more important than them.
 
 ## Management
+
+<img class="hang" src="http://i.giphy.com/ZW67Zw8cbIojS.gif">
 
 ### Know your own faults.  
 I've listed mine above and I'm learning to recognise when they're affecting me in a negative way. This is the first step to moving past just being angry and stressed by them.
