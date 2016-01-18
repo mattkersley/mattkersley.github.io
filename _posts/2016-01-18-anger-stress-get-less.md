@@ -13,7 +13,7 @@ Stress, and it’s evil side effect, anger are issues I struggle with on an almo
 I play the joker most days, making crude jokes or providing friendly banter.  
 Sometimes, you have to be serious to discuss human issues.
 
-My hope is that someone will relate to, and extract something useful to apply to their own life. If this post helps 1 person, it’s don’t it’s job.
+My hope is that someone will relate to, and extract something useful to apply to their own life. If this post helps 1 person, it’s done it’s job.
 
 There is at least one time a day where I let something annoy me to the point where it changes my entire mood.
 
