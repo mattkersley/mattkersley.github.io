@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Vouchin’ for no slouchin’
-date:   2016-01-13 07:41:37 +0000
 categories: health
 excerpt: "I’m jumping on the “standing desk” bandwagon!  
 Jigowatt (work) paid for a brand new “VeriDesk Pro Plus 36” for me to work with after my shoulder/neck/back issues seemed to be getting more and more frequent.  
@@ -16,7 +15,7 @@ Jigowatt (work) paid for a brand new “VeriDesk Pro Plus 36” for me to work w
 Read about my first working week being a "stand up guy".
 
 **TL;DR (lazy douchébag version):**  
-Standing desks are ace, get one, but beware the drawbacks.
+Standing desks are ace, get one, but beware the drawbacks & hidden cost.
 
 ## “Exercise your back”…
 
@@ -24,34 +23,34 @@ Standing desks are ace, get one, but beware the drawbacks.
 
 Let’s face it, us designers/developers – we’re not known for our bulging biceps, rough “working man’s” hands or “pressing the bench” are we?  
 
-That “sexism-high-horse” you’re riding?  
-Dismount graciously!
+I’m obviously self-referencing, before you start getting all high-horsey about the sexism.
 
-I’m obviously self-referencing.
-
-So, aside from doing more exercise (which I’m going to do this year), I needed to change my working habits.
+So… aside from doing more exercise (which I’m going to do this year), I needed to change my working habits. One of the best ways I could see of doing this, was to switch to a standing desk instead of being slumped over a keyboard all day.
 
 ## Ask your workplace
 
-Your workplace may, or may not buy you a standing desk.  
+Your workplace may, or may not buy you a standing desk. It’s worth asking.
+
 I already had a desk, so I asked for a “VeriDesk Pro Plus 36”, and within a week, it arrived.
 
-“But my employer doesn’t care!”
-
-Ask, you might be surprised!  
-If they _really_ don’t care, then perhaps it’s time to ask yourself if you want to work for heartless, money grabbing douchébags.
+“But my employer doesn’t care!” I hear you cry.  
+Ask, you might be surprised! The budget may not be there, but if they _really_ don’t care, then perhaps it’s time to ask yourself if you want to work for heartless, money grabbing douchébags.
 
 ## Days 1 & 2
 
-My shoulder is already seeing the benefits. I’m amazed by this, just one day in.
+My shoulder is already seeing the benefits.  
+I’m amazed by this – just one day in.
 
 Not just that, I just feel more “with it”, more awake.  
 You can’t just slouch down and slip into your 2pm, post-lunch, inert stupor.
 
-Added bonus: I’m technically exercising while I work too!  
+**Added bonus:** I’m technically exercising while I work too!  
 I can’t stand still for long periods, so I find myself stepping about, wiggling on the spot, and moving a lot more.
 
-It’s no longer an effort to get up to fetch drinks, or stretch your legs on your screen break. Don’t judge me, you’ve done it too! “Urgh, can’t be bothered to get up and make teas for everyone”.
+It’s no longer an effort to get up to fetch drinks, or stretch my legs on my screen break.
+
+Don’t judge me, you’ve done it too!  
+“Urgh, can’t be bothered to get up and make teas for everyone”.
 
 I’ve got a slight ache in my lower back, but I expected this because I’m using muscles I don’t normally.
 
@@ -66,7 +65,7 @@ I woke up with cramp in my calf muscle on the 3rd day, but I’m not sure this i
 
 The final day of the “week at work” using the VeriDesk.
 
-I’m not going back.
+I’m not returning to the chair.
 
 The ache in my lower back has gone.  
 My shoulder feels *loads* better.  
@@ -75,8 +74,9 @@ I’d even go as far as saying my productivity has increased too.
 
 ## The drawbacks
 
-Yes, after all that praise, there are a few drawbacks.  
-It’s the same with anything else – unforeseen issues that nobody warned you about, no research you did showed and most of all you didn’t think about while you were in writhing agony from putting your back out… again.
+Yes, after all that praise, there are a few drawbacks.
+
+It’s the same with anything else – unforeseen issues that nobody warned you about, no research you did exposed, and most of all you didn’t think about while you were in writhing agony from putting your back out… again.
 
 ### The VeriDesk is heavy.
 
