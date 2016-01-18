@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  Anger? Stress? Get less.
-date:   2016-01-18 08:00:00 +0000
 categories: health
 ---
 
