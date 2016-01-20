@@ -2,9 +2,7 @@
 layout: post
 title:  Vouchin’ for no slouchin’
 categories: health
-excerpt: "I’m jumping on the “standing desk” bandwagon!  
-Jigowatt (work) paid for a brand new “VeriDesk Pro Plus 36” for me to work with after my shoulder/neck/back issues seemed to be getting more and more frequent.  
-Read about my first working week being a “stand up guy”."
+excerpt: "I’m jumping on the “standing desk” bandwagon! Jigowatt (work) paid for a brand new “VeriDesk Pro Plus 36” for me to work with after my shoulder/neck/back issues seemed to be getting more and more frequent. Read about my first working week being a “stand up guy”."
 ---
 
 <img class="left" alt="VeriDesk Pro Plus 36" src="/img/post-images/vouching-for-no-slouching-veridesk.jpg">
