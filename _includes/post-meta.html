@@ -1,0 +1,11 @@
+{% capture read_time %}
+  {{ post.content | number_of_words | divided_by: 180 }}
+{% endcapture %}
+<p class="post-meta">
+  <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time> &bull;
+  {% if read_time != '0' %}
+    {{ read_time }}
+  {% else %}
+    1
+  {% endif %} min read
+</p>

@@ -20,8 +20,8 @@ title: mattkersley.com
 </section>
 <section class="posts">
   {% for post in site.posts limit:1 %}
-      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-      <h2>{{ post.title }}</h2>
+    {% include post-meta.html %}
+    <h2>{{ post.title }}</h2>
     {{ post.excerpt }}
     <p class="buttons"><a href="{{ post.url | prepend: site.baseurl }}" class="button">read more</a> or <a href="/blog" class="button secondary">visit blog</a></p>
   {% endfor %}

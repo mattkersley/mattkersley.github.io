@@ -8,7 +8,7 @@ title: mattkersley.com
 <div class="post-list">
   {% for post in site.posts %}
     <section>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      {% include post-meta.html %}
 
       <div class="post-snippet">
         <h2>{{ post.title }}</h2>
