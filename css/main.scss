@@ -62,12 +62,14 @@ h4 {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   max-width: 600px;
-  padding: 40px;
   position: relative;
-
+  padding: 15px;
+  gap: 20px;
+  
   @media (min-width: 768px) {
+    gap: 40px;
+    padding: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -179,13 +181,18 @@ h4 {
 .card__employment-status {
   background: rgba(0,0,0,0.1);
   border-radius: 30px;
-  padding: 1em;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   color: #fff;
   justify-content: center;
-  width: calc(100% - 2em);
+  padding: 0.5em;
+  width: calc(100% - 1em);
+  
+  @media (min-width: 768px) {
+    padding: 1em;
+    width: calc(100% - 2em);
+  }
 }
 
 
@@ -197,11 +204,16 @@ h4 {
   border-bottom: solid 1px rgba(0,0,0,.1);
   position: relative;
   border-radius: 30px;
-  padding: 1em 2em;
   color: #fff;
   text-decoration: none;
-  width: calc(100% - 40px - 2em);
   text-align: center;
+  padding: 0.5em;
+  width: calc(100% - 1em);
+
+  @media (min-width: 768px) {
+    padding: 1em 2em;
+    width: calc(100% - 40px - 2em);
+  }
 
   &::before {
     content: '';

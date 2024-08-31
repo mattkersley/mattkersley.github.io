@@ -7,35 +7,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link href='https://fonts.googleapis.com/css?family=Esteban|Lato:400,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ "/css/main.css?v=00002" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css?v=00003" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   {% include head--twitter-card.html %}
   {% include head--opengraph.html %}
   {% include head--icons.html %}
-
-  <script>
-
-    // global vars
-    var today = new Date();
-    var tomorrow = new Date();
-        tomorrow.setDate(tomorrow.getDate() + 1);
-    var playLogo = false;
-
-    // if we have localstorage,
-    // see if the logo_expiry has happened or not
-    if (window.localStorage) {
-      var expires = new Date(localStorage.getItem('logo_expiry'));
-      playLogo = (today - expires > 0);
-    }
-
-    // if the logo animation has been played already, just load the content
-    window.onload = function(){
-      var body = document.getElementsByTagName('body')[0];
-      if (!playLogo || body.className.indexOf('home') < 0) {
-        body.className += ' loaded';
-      }
-    };
-  </script>
 
 </head>
