@@ -8,7 +8,7 @@
 # Site settings
 title: "Matt Kersley | Peterborough Web Designer and Developer"
 email: mkersley@gmail.com
-description: Peterborough based web designer and developer
+description: UK Based Developer & Team Lead
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mattkersley.com" # the base hostname & protocol for your site
 permalink: /:categories/:title
